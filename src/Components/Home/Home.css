@@ -1,0 +1,91 @@
+.home {
+  padding-top: 9rem;
+}
+.home .secContainer {
+  text-align: center;
+  display: grid;
+}
+.home .secContainer .homeText .homeSpan {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 15px;
+}
+.home .secContainer .homeText .homeTitle {
+  color: var(--blackColor);
+  font-weight: 700;
+  font-size: 30px;
+}
+.home .secContainer .homeText .btns {
+  gap: 1.5rem;
+  justify-content: center;
+}
+.home .secContainer .homeText .btns .btn {
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+}
+.home .secContainer .homeText .btns .btn:hover {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+.home .secContainer .homeText .btns .btn.primaryBtn {
+  color: var(--whiteColor);
+}
+.home .secContainer .homeText .btns .btn.primaryBtn:hover {
+  background: var(--whiteColor);
+  color: var(--primaryColor);
+}
+.home .secContainer .homeImage {
+  margin: auto;
+}
+.home .secContainer .homeImage img {
+  width: 100%;
+  max-width: 350px;
+}
+
+@media screen and (min-width: 520px) {
+  .home .secContainer .homeText .homeSpan {
+    font-size: 18px;
+  }
+  .home .secContainer .homeText .homeTitle {
+    font-size: 35px;
+  }
+  .home .secContainer .homeText .homeSubTitle {
+    font-size: 14px;
+  }
+  .home .secContainer .homeText .btns .btn {
+    font-size: 14px;
+  }
+  .home .secContainer .homeImage {
+    max-width: 100%;
+  }
+  .home .secContainer .homeImage img {
+    max-width: 85%;
+  }
+}
+@media screen and (min-width: 770px) {
+  .home .secContainer .homeText .homeSpan {
+    font-size: 21px;
+  }
+  .home .secContainer .homeText .homeTitle {
+    font-size: 45px;
+  }
+  .home .secContainer .homeText .btns {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 996px) { 
+  .home .secContainer .homeText .homeSpan {
+    font-size: 25px;
+  }
+  .home .secContainer .homeText .homeTitle {
+    font-size: 55px;
+  }
+  .home .secContainer .homeText .btns .btn {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=Home.css.map */

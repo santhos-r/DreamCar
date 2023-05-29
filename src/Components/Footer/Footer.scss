@@ -1,0 +1,105 @@
+.footer {
+    padding-top: 4rem;
+
+    .footerContainer {
+        .footerMenuDiv {
+            padding: 2rem;
+            background: var(--greyColor);
+            border-radius: 10px;
+            gap: 1.5rem;
+
+            .singleGrid {
+                .footerTitle {
+                    display: block;
+                    padding-bottom: 0.5rem;
+                    font-size: 16px;
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+
+                .footerList {
+                    gap: 5px;
+
+                    .footerLink {
+                        color: var(--textColor);
+                        cursor: pointer;
+
+                        &:hover {
+                            color: var(--blackColor);
+                            transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .lowerSection {
+            padding: 1rem;
+            text-align: center;
+
+            span {
+                font-weight: 700;
+                font-style: italic;
+                flex: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .footer {
+        .footerContainer {
+            .footerMenuDiv {
+                grid-template-columns: repeat(2, 1fr);
+
+                .singleGrid {
+                    margin: auto;
+
+                    .footerTitle {
+                        font-size: 17px;
+                    }
+
+                    .footerList {
+                        gap: 5px;
+
+                        .footerLink {
+                            color: var(--textColor);
+                        }
+                    }
+                }
+            }
+
+            .lowerSection {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .footer {
+        .footerContainer {
+            .footerMenuDiv {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .footer {
+        .footerContainer {
+            padding: 2rem 0;
+
+            .footerMenuDiv {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}
